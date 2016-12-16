@@ -1,3 +1,19 @@
+/*    Simple Huffman Code Generator.
+ *    Copyright (C) 2016, eaglei-dev
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include"huffman_min.h"
@@ -100,11 +116,12 @@ void show(BTNode *temp)
 {
 	fflush(stdin);
 	printf("Node Probability is: %f\n",temp->problty);
-	/*	if(temp->prev)
-		printf("Previous Node Exists.\n");
-		if(temp->next)
-		printf("Next Node Exists.\n");
-		*/
+	/* To Debug - 
+	 * if (temp->prev)
+	 *	 printf("Previous Node Exists.\n");
+	 * if (temp->next)
+	 *	printf("Next Node Exists.\n");
+	 */
 }
 
 

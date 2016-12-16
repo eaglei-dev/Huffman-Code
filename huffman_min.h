@@ -1,8 +1,23 @@
+/*    Simple Huffman Code Generator.
+ *    Copyright (C) 2016, eaglei-dev
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 #ifndef HUFFMIN_H
 #define HUFFMIN_H
 typedef struct btNode
 {
-	/* Binary Tree Node Structure. */
+	/* Node Structure. */
 	struct btNode *left;
 	struct btNode *prev;
 	float problty;
@@ -23,7 +38,7 @@ int symbol_count;
 /* Get The Symbol Count From User.*/
 void get_symbol_count();
 
-/*Dynamically Create A New Binary Node. */
+/*Dynamically Create A New Node. */
 BTNode * getNode();
 
 /* Assign The User Input Data to Newly Created Data.*/
@@ -38,7 +53,7 @@ void traverse(BTNode *);
 void arrange(BTNode *, BTNode *);
 
 
-/* Start Building Binary Heap*/
+/* Start Building Heap*/
 void build_heap(BTNode *);
 
 void show(BTNode *);
